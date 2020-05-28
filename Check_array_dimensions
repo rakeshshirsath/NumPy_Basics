@@ -1,0 +1,18 @@
+import numpy as np
+# Code starts here
+
+# initialize NumPy array
+# Make a NumPy array also named array which consists of the first 10 natural numbers using the np.arange(1, 11)
+array = np.arange(1,11)
+
+# check dimensions whether array is 1-D or 2-D
+dim = array.ndim
+
+# reshaped array
+reshaped = array.reshape(5,2)
+
+# check shape
+new_dim = reshaped.ndim
+
+print(dim, new_dim)
+# Code ends here
