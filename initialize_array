@@ -1,0 +1,12 @@
+import numpy as np
+#Creates empty / uninitialized 2-D array 
+print(np.empty((3,3),dtype = 'int8'))
+#Creates new array of specified size and filled with zeros
+print(np.zeros((1),dtype='int8'))
+print(np.zeros((2,3),dtype='int8'))
+#Creates new array of specified size and filled with Ones
+print(np.ones((3,4),dtype='int8'))
+#Creates new array of specified size and filled with mentioned constant (here 5)
+print(np.full((2,3),5))
+#Creates new array of specified size and filled 1 at diagonal position and else are zero
+print(np.eye(3))
