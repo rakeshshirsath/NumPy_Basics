@@ -1,0 +1,19 @@
+# Code starts here
+import numpy as np
+# initialize array
+array = np.array([3,4.5,3+5j,0],dtype='complex128')
+
+# boolean filter
+real = np.isreal(array)
+real_array = array[real]
+
+imag = np.iscomplex(array)
+imag_array = array[imag]
+# boolean filter
+print(real_array)
+print(imag_array)
+# Code ends here
+
+# Output
+# [3. +0.j 4.5+0.j 0. +0.j]
+# [3.+5.j]
