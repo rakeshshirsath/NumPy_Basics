@@ -1,0 +1,25 @@
+import numpy as np
+# initialize array for prices
+prices = np.array([[40,35,20],[21,48,70]])
+# Code starts here
+# flatten the array
+prices = prices.flatten()
+
+# minimum price
+buying_price = np.min(prices)
+
+# index of buying price
+index = list(prices).index(buying_price)
+
+# create subset
+selling_price = np.max((prices)[index:len(prices)])
+
+# selling price
+print(selling_price)
+
+# profit
+profit = selling_price - buying_price
+# display
+print(profit)
+
+# Code ends here
