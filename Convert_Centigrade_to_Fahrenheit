@@ -1,0 +1,13 @@
+# Code starts here
+import numpy as np
+# centigrade temperatures
+centigrade_temps = np.array([0, 10, 25, 32, 80, 99.99])
+
+# function for conversion
+def convert(celsius):
+    return(9 * celsius / 5 + 32)
+
+# display fahrehheit temperatures
+fahrenheit_temps = convert(centigrade_temps)
+print(fahrenheit_temps)
+# Code ends here
